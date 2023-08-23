@@ -1,0 +1,49 @@
+.products {
+  @apply px-8 py-3 grid grid-cols-6 gap-3;
+  .error {
+    @apply col-span-3;
+  }
+  .noResults {
+    @apply px-8;
+    grid-column: 1 / -1;
+  }
+}
+
+.pagination {
+  @apply px-8 py-3 flex justify-center gap-3;
+  .page {
+    @apply border rounded-3xl px-3 py-1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .products {
+    @apply px-16 grid-cols-3 gap-3;
+    .noResults {
+      @apply px-16;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    @apply px-8 grid-cols-2 gap-2;
+    .noResults {
+      @apply px-8;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products {
+    @apply grid-cols-1 px-4;
+    .noResults {
+      @apply px-4;
+    }
+    svg {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.item {
+  @apply flex flex-col bg-slate-100 p-2 rounded-md justify-between;
+  min-height: 210px;
+  img {
+    @apply w-full;
+  }
+  .title {
+    @apply text-center text-sm font-medium py-3;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .item {
+    min-height: 340px;
+  }
+}

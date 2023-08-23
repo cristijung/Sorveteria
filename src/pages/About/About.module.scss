@@ -1,0 +1,41 @@
+.about {
+  @apply flex flex-col gap-2 px-16;
+  h2 {
+    @apply font-medium text-xl py-5;
+    @media screen and (max-width: 480px) {
+      @apply text-base py-2;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    @apply px-16;
+  }
+  @media screen and (max-width: 768px) {
+    @apply px-8;
+  }
+  @media screen and (max-width: 480px) {
+    @apply px-4;
+  }
+}
+
+.foto {
+  max-width: 100%;
+  border-radius: 4px;
+  align-self: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.gridContent {
+  background-color: #ccc;
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.itemGrid {
+  text-align: justify;
+}
+
+.iteGridImg {
+  align-items: center;
+  text-align: center;
+}

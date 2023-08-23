@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-sans font-light;
+}
+input {
+  @apply outline-none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+

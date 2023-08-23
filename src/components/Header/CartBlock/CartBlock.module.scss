@@ -1,0 +1,24 @@
+.cart {
+  @apply flex justify-center items-center  border rounded-md  w-fit h-fit px-3 py-1 justify-self-end;
+  .sum {
+    @apply border-r px-2 whitespace-nowrap;
+  }
+  .count {
+    @apply flex justify-center  items-center px-2;
+    .icon {
+      @apply flex m-auto mr-1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart {
+    @apply flex-col text-sm;
+    .sum {
+      @apply border-none;
+    }
+    .count {
+      @apply border-t;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.filters {
+  @apply flex flex-col gap-3 px-8 py-4;
+  .sort {
+    @apply self-end;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .filters {
+    @apply px-16;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filters {
+    @apply px-8 gap-3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filters {
+    @apply px-4;
+  }
+}

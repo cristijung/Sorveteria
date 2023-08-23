@@ -1,0 +1,55 @@
+.contact {
+  @apply flex flex-col gap-2 px-16;
+  h2 {
+    @apply font-medium text-xl py-5;
+    @media screen and (max-width: 480px) {
+      @apply text-base py-2;
+    }
+  }
+
+  .main {
+    @apply grid gap-3;
+    grid-template-columns: 2fr 3fr;
+    .info {
+      @apply px-4 m-auto;
+      div {
+        @apply pb-3;
+      }
+      span,
+      a {
+        @apply font-medium;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact {
+    @apply px-16;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    @apply px-8;
+    .main {
+      @apply grid-cols-1;
+      .img {
+        @apply w-full h-2/3;
+        height: 20em;
+        img {
+          @apply object-cover w-full h-full;
+        }
+      }
+      .info {
+        @apply px-0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    @apply px-4;
+  }
+}

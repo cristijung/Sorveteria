@@ -1,0 +1,29 @@
+.categories {
+  @apply flex gap-1 flex-nowrap list-none items-center  overflow-x-scroll;
+  .category {
+    @apply border rounded-md px-2 py-0.5 w-fit h-fit cursor-pointer font-light p-1 whitespace-nowrap;
+    &:hover {
+      @apply bg-gray-200;
+    }
+    &.active {
+      @apply bg-gray-200;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-3xl bg-clip-content;
+  border: 6px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
